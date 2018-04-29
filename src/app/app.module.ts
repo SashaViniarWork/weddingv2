@@ -50,12 +50,12 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     MatIconModule,
     NgxCarouselModule,
     MatMenuModule,
-    RouterModule.forRoot(appRoutes),
-    {provide: LocationStrategy, useClass: HashLocationStrategy}
+    RouterModule.forRoot(appRoutes, { useHash: true }),
+
     BrowserAnimationsModule,
     ImageCropperModule
   ],
-  providers: [],
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule {
