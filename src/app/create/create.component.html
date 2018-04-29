@@ -2,15 +2,24 @@
   <div class="panel-body">
     <form [formGroup]="angForm" novalidate>
       <div class="form-group">
-        <label class="col-md-4">Name</label>
-        <input type="text" class="form-control" formControlName="name" #name />
+        <label class="col-md-4">Прокат</label>
+        <input type="text" class="form-control" formControlName="rent"  />
       </div>
       <div class="form-group">
-        <label class="col-md-4">Description</label>
+        <label class="col-md-4">Застава</label>
+        <input type="text" class="form-control" formControlName="qqq"  />
+      </div>
+      <div class="form-group">
+        <label class="col-md-4">Опис</label>
         <input type="text" class="form-control" formControlName="description" #description/>
       </div>
-
+      <!--<div class="form-group">-->
+        <!--<label class="col-md-4">Ціна за 4 дні</label>-->
+        <!--<input type="text" class="form-control" formControlName="fourday" #name />-->
+      <!--</div>-->
       <input type="file" (change)="fileChangeEvent($event)" />
+      <input type="file" (change)="fileChangetwo($event)" />
+      <input type="file" (change)="fileChangethird($event)" />
 
       <image-cropper
         [imageChangedEvent]="imageChangedEvent"
@@ -22,10 +31,33 @@
         (imageLoaded)="imageLoaded()"
         (loadImageFailed)="loadImageFailed()"
       ></image-cropper>
-
       <img [src]="croppedImage" />
+      <image-cropper
+        [imageChangedEvent]="imageChangedtwo"
+        [maintainAspectRatio]="true"
+        [aspectRatio]="4 / 3"
+        [resizeToWidth]="128"
+        format="png"
+        (imageCropped)="imageCroppedtwo($event)"
+        (imageLoaded)="imageLoadedtwo()"
+        (loadImageFailed)="loadImageFailedtwo()"
+      ></image-cropper>
+      <img [src]="croppedImagetwo" />
+      <image-cropper
+        [imageChangedEvent]="imageChangedthird"
+        [maintainAspectRatio]="true"
+        [aspectRatio]="4 / 3"
+        [resizeToWidth]="128"
+        format="png"
+        (imageCropped)="imageCroppedthird($event)"
+        (imageLoaded)="imageLoadedthird()"
+        (loadImageFailed)="loadImageFailedthird()"
+      ></image-cropper>
+      <img [src]="croppedImagethird" />
+
+
       <div class="form-group">
-        <button (click)="addShare(name.value, description.value)" class="btn btn-primary">Add</button>
+        <button (click)="addShare('name', description.value)" class="btn btn-primary">Add</button>
       </div>
     </form>
   </div>

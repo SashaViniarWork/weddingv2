@@ -15,12 +15,82 @@
       </div>
     </div>
     <div class="row">
+      <div class="col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3 col-xs-8 col-xs-offset-2 col-sm-10 col-sm-offset-1">
+        <ngx-carousel
+          [inputs]="carouselOne"
+          [moveToSlide]="2"
+          (onMove)="myfunc($event)">
 
+          <ngx-item NgxCarouselItem class="bannerStyle">
+            <img src="../../assets/img/banner/12.jpg" alt="">
+          </ngx-item>
+          <ngx-item NgxCarouselItem class="bannerStyle">
+            <img src="../../assets/img/banner/1.jpg" alt="">
+          </ngx-item>
+
+          <ngx-item NgxCarouselItem class="bannerStyle">
+            <img src="../../assets/img/banner/2.jpg" alt="">
+          </ngx-item>
+
+          <ngx-item NgxCarouselItem class="bannerStyle">
+            <img src="../../assets/img/banner/3.jpg" alt="">
+          </ngx-item>
+
+          <ngx-item NgxCarouselItem class="bannerStyle">
+            <img src="../../assets/img/banner/4.jpg" alt="">
+          </ngx-item>
+
+          <ngx-item NgxCarouselItem class="bannerStyle">
+            <img src="../../assets/img/banner/5.jpg" alt="">
+          </ngx-item>
+
+          <ngx-item NgxCarouselItem class="bannerStyle">
+            <img src="../../assets/img/banner/6.jpg" alt="">
+          </ngx-item>
+
+          <ngx-item NgxCarouselItem class="bannerStyle">
+            <img src="../../assets/img/banner/7.jpg" alt="">
+          </ngx-item>
+
+          <ngx-item NgxCarouselItem class="bannerStyle">
+            <img src="../../assets/img/banner/8.jpg" alt="">
+          </ngx-item>
+
+          <ngx-item NgxCarouselItem class="bannerStyle">
+            <img src="../../assets/img/banner/9.jpg" alt="">
+          </ngx-item>
+
+          <ngx-item NgxCarouselItem class="bannerStyle">
+            <img src="../../assets/img/banner/10.jpg" alt="">
+          </ngx-item>
+
+          <ngx-item NgxCarouselItem class="bannerStyle">
+            <img src="../../assets/img/banner/11.jpg" alt="">
+          </ngx-item>
+
+
+          <ngx-item NgxCarouselItem class="bannerStyle">
+            <img src="../../assets/img/banner/13.jpg" alt="">
+          </ngx-item>
+
+          <ngx-item NgxCarouselItem class="bannerStyle">
+            <img src="../../assets/img/banner/14.jpg" alt="">
+          </ngx-item>
+
+          <ngx-item NgxCarouselItem class="bannerStyle">
+            <img src="../../assets/img/banner/15.jpg" alt="">
+          </ngx-item>
+
+
+          <button NgxCarouselPrev class='leftRs'>&lt;</button>
+          <button NgxCarouselNext class='rightRs'>&gt;</button>
+        </ngx-carousel>
+      </div>
     </div>
     <div class="row">
       <div class="col-lg-10 col-lg-offset-1">
         <p class="price text-center">
-          Вартість : 2*2м= 1550, 2*3м=1750.
+          Вартість : 2*2м= 1650, 2*3м=1850.
           У вартість входить:<br>
           оренда конструкції,
           створення макету,
@@ -30,7 +100,7 @@
 
         </p>
         <p class="price text-center">
-          У вартість оренди включено: доставку та обслоговування в межах м. Львова, 1.5 - 2 кг. витратного матеріалу (конфеті).
+          У вартість оренди включено: доставку та обслоговування в межах м. Львова.
         </p>
       </div>
     </div>
@@ -38,6 +108,28 @@
     <div class="row">
       <p class="text-center text_head_effect_block">Фоторамки
       </p>
+    </div>
+    <div class="col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3 col-xs-8 col-xs-offset-2 col-sm-10 col-sm-offset-1">
+
+      <ngx-carousel
+        [inputs]="carouselTwo"
+        [moveToSlide]="2"
+        (onMove)="myfunc($event)">
+
+        <ngx-item NgxCarouselItem class="bannerStyle">
+          <img src="../../assets/img/photo/1.jpg" alt="">
+        </ngx-item>
+        <ngx-item NgxCarouselItem class="bannerStyle">
+          <img src="../../assets/img/photo/2.jpg" alt="">
+        </ngx-item>
+
+        <ngx-item NgxCarouselItem class="bannerStyle">
+          <img src="../../assets/img/photo/3.jpg" alt="">
+        </ngx-item>
+
+        <button NgxCarouselPrev class='leftRs'>&lt;</button>
+        <button NgxCarouselNext class='rightRs'>&gt;</button>
+      </ngx-carousel>
     </div>
     <div class="row">
       <div class="col-lg-10 col-lg-offset-1">
@@ -51,11 +143,15 @@
       <p class="text-center text_head_effect_block">План розсадки
       </p>
     </div>
+    <div class="col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3 col-xs-8 col-xs-offset-2 col-sm-10 col-sm-offset-1">
+
+      <img src="../../assets/img/photo/4.jpg" alt="">
+    </div>
     <div class="row">
       <div class="col-lg-10 col-lg-offset-1">
         <p class="text_text_effect_block">
           Роздрук на пластику. Розмір 40*60 см . Вартість 550 грн.
-          Номерація столів. Розмір 15*20 см. К-сть 6 шт. Вартість 300 грн.
+          Номерація столів. Розмір 15*20 см. К-сть 6 шт. Вартість 400 грн.
 
         </p>
       </div>
@@ -64,6 +160,30 @@
     <div class="row">
       <p class="text-center text_head_effect_block">Букви LOVE
       </p>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3 col-xs-8 col-xs-offset-2 col-sm-10 col-sm-offset-1">
+
+        <ngx-carousel
+          [inputs]="carouselThird"
+          [moveToSlide]="2"
+          (onMove)="myfunc($event)">
+
+          <ngx-item NgxCarouselItem class="bannerStyle">
+            <img src="../../assets/img/photo/5.jpg" alt="">
+          </ngx-item>
+          <ngx-item NgxCarouselItem class="bannerStyle">
+            <img src="../../assets/img/photo/6.jpg" alt="">
+          </ngx-item>
+
+          <ngx-item NgxCarouselItem class="bannerStyle">
+            <img src="../../assets/img/photo/7.jpg" alt="">
+          </ngx-item>
+
+          <button NgxCarouselPrev class='leftRs'>&lt;</button>
+          <button NgxCarouselNext class='rightRs'>&gt;</button>
+        </ngx-carousel>
+      </div>
     </div>
     <div class="row">
       <div class="col-lg-10 col-lg-offset-1">
@@ -80,6 +200,49 @@
     <div class="row">
       <p class="text-center text_head_effect_block">Флористика та декор
       </p>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3 col-xs-8 col-xs-offset-2 col-sm-10 col-sm-offset-1">
+
+        <ngx-carousel
+          [inputs]="carouselFour"
+          [moveToSlide]="2"
+          (onMove)="myfunc($event)">
+
+          <ngx-item NgxCarouselItem class="bannerStyle">
+            <img src="../../assets/img/flor/1.jpg" alt="">
+          </ngx-item>
+          <ngx-item NgxCarouselItem class="bannerStyle">
+            <img src="../../assets/img/flor/2.jpg" alt="">
+          </ngx-item>
+          <ngx-item NgxCarouselItem class="bannerStyle">
+            <img src="../../assets/img/flor/3.jpg" alt="">
+          </ngx-item>
+          <ngx-item NgxCarouselItem class="bannerStyle">
+            <img src="../../assets/img/flor/4.jpg" alt="">
+          </ngx-item>
+          <ngx-item NgxCarouselItem class="bannerStyle">
+            <img src="../../assets/img/flor/5.jpg" alt="">
+          </ngx-item>
+          <ngx-item NgxCarouselItem class="bannerStyle">
+            <img src="../../assets/img/flor/7.jpg" alt="">
+          </ngx-item>
+          <ngx-item NgxCarouselItem class="bannerStyle">
+            <img src="../../assets/img/flor/8.jpg" alt="">
+          </ngx-item>
+          <ngx-item NgxCarouselItem class="bannerStyle">
+            <img src="../../assets/img/flor/9.jpg" alt="">
+          </ngx-item>
+          <ngx-item NgxCarouselItem class="bannerStyle">
+            <img src="../../assets/img/flor/10.jpg" alt="">
+          </ngx-item>
+          <ngx-item NgxCarouselItem class="bannerStyle">
+            <img src="../../assets/img/flor/11.jpg" alt="">
+          </ngx-item>
+          <button NgxCarouselPrev class='leftRs'>&lt;</button>
+          <button NgxCarouselNext class='rightRs'>&gt;</button>
+        </ngx-carousel>
+      </div>
     </div>
     <div class="row">
       <div class="col-lg-10 col-lg-offset-1">

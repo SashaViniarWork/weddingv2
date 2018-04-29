@@ -1,0 +1,47 @@
+<div class="container">
+  <p class="text-center logo_text">Прокат плать від Марії Баранець</p>
+  <div class="col-lg-12">
+    <div class="row">
+      <div class="col-lg-4">
+        <ngx-carousel
+          [inputs]="carouselOne"
+          [moveToSlide]="2"
+          (onMove)="myfunc($event)">
+
+          <ngx-item NgxCarouselItem class="bannerStyle">
+            <img src="{{Photo}}" alt="">
+          </ngx-item>
+          <ngx-item NgxCarouselItem class="bannerStyle">
+            <img src="{{Photo1}}" alt="">
+          </ngx-item>
+          <ngx-item NgxCarouselItem class="bannerStyle">
+            <img src="{{Photo2}}" alt="">
+          </ngx-item>
+
+          <button NgxCarouselPrev class='leftRs'>&lt;</button>
+          <button NgxCarouselNext class='rightRs'>&gt;</button>
+        </ngx-carousel>
+      </div>
+      <div class="col-lg-8">
+        <div class="row">
+          <div class="col-lg-2 col-md-6">Прокат</div>
+          <div class="col-lg-10 col-md-6">{{Rent}}</div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-2 col-md-6">Застава</div>
+          <div class="col-lg-10 col-md-6">{{Zastava}}</div>
+        </div>
+        <div class="row">
+          <div class="col-lg-2 col-md-6">Опис</div>
+          <div class="col-lg-10 col-md-6">{{Description}}</div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12"><span style = "color:red">*</span>Ціна за 4 дні, додатковий день 50грн</div>
+          <div class="col-lg-12"><span style = "color:red">*</span>Хімчиста врахована у вартість</div>
+          <div class="col-lg-12"><span style = "color:red">*</span>Доставка по Україні</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

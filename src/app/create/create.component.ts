@@ -13,7 +13,11 @@ export class CreateComponent implements OnInit {
   private basePath = '/rent';
   public items: any;
   imageChangedEvent: any = '';
+  imageChangedtwo: any = '';
+  imageChangedthird: any = '';
   croppedImage: any = '';
+  croppedImagetwo: any = '';
+  croppedImagethird: any = '';
   public item: any;
 
   constructor(private db: AngularFireDatabase, private fb: FormBuilder) {
@@ -24,14 +28,19 @@ export class CreateComponent implements OnInit {
       email: ['', Validators.required],
       description: ['', Validators.required],
       file: ['', Validators.required],
+      qqq: ['', Validators.required],
+      rent: ['', Validators.required]
     });
   }
 
   addShare(name, description) {
     const dataObj = {
-      name: name,
       description: description,
-      file: this.croppedImage
+      file: this.croppedImage,
+      file1: this.croppedImagetwo,
+      file2: this.croppedImagethird,
+      zastava: this.angForm.value.qqq,
+      rent: this.angForm.value.rent
     };
     const obj = this.db.database.ref(this.basePath);
     obj.push(dataObj);
@@ -51,6 +60,36 @@ export class CreateComponent implements OnInit {
   }
 
   loadImageFailed() {
+    // show message
+  }
+  fileChangetwo(event: any): void {
+    this.imageChangedtwo = event;
+  }
+
+  imageCroppedtwo(image: string) {
+    this.croppedImagetwo = image;
+  }
+
+  imageLoadedtwo() {
+    // show cropper
+  }
+
+  loadImageFailedtwo() {
+    // show message
+  }
+  fileChangethird(event: any): void {
+    this.imageChangedthird = event;
+  }
+
+  imageCroppedthird(image: string) {
+    this.croppedImagethird = image;
+  }
+
+  imageLoadedthird() {
+    // show cropper
+  }
+
+  loadImageFailedthird() {
     // show message
   }
 

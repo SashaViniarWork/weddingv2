@@ -25,6 +25,7 @@ import { CreateComponent } from './create/create.component';
 import {LocationStrategy, HashLocationStrategy} from '@angular/common';
 import { ImageCropperModule } from 'ngx-image-cropper';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import { PagedressComponent } from './pagedress/pagedress.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,7 +36,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     VideoComponent,
     RentMainComponent,
     ContactComponent,
-    CreateComponent
+    CreateComponent,
+    PagedressComponent
   ],
   imports: [
     AngularFireModule.initializeApp(environment.firebase),

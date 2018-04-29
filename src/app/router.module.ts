@@ -9,6 +9,7 @@ import { VideoComponent } from './video/video.component';
 import { RentMainComponent } from './rent-main/rent-main.component';
 import { ContactComponent } from './contact/contact.component';
 import {CreateComponent} from "./create/create.component";
+import { PagedressComponent } from "./pagedress/pagedress.component"
 export const appRoutes: Routes = [
   {
     path: '',
@@ -38,6 +39,9 @@ export const appRoutes: Routes = [
   },
   { path: 'create',
     component: CreateComponent
+  },
+  { path: 'dress',
+    component: PagedressComponent
   }
 ];
 export const AppComponents: any = [

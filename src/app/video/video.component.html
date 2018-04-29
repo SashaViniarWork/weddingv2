@@ -11,18 +11,18 @@
       <p class="text_text_effect_block">
         Зйомка весільного дня одним відеографом від ранку до 02:00.Аерозйомка.
         Монтаж повного весільного фільму тривалістю від 45 хв.до 75 хв.+
-        кліп highlights 3-5 хв.
+        кліп highlights 3-5 хв.&nbsp;&nbsp;&nbsp;&nbsp; 500 y.o.
       </p>
     </div>
   </div>
-  <div class="row">
-    <div class="col-lg-10 col-lg-offset-1">
-      <p class="price text-center">
-        500 y.o.
+  <!--<div class="row">-->
+    <!--<div class="col-lg-10 col-lg-offset-1">-->
+      <!--<p class="price text-center">-->
+        <!--500 y.o.-->
 
-      </p>
-    </div>
-  </div>
+      <!--</p>-->
+    <!--</div>-->
+  <!--</div>-->
 
   <div class="row">
     <p class="text-center text_head_effect_block">Стандарт</p>
@@ -30,21 +30,45 @@
   <div class="row">
     <div class="col-lg-10 col-lg-offset-1">
       <p class="text_text_effect_block">
-        Зйомка весільного дня двома відеографами від ранку до 02.00. Аерозйомка. Монтаж повного весільного фільму тривалістю від 45хв. до 90хв.+кліп highlights 3-5 хв.
+        Зйомка весільного дня двома відеографами від ранку до 02.00. Аерозйомка.
+        Монтаж повного весільного фільму тривалістю від 45хв. до 90хв.+кліп highlights 3-5 хв.&nbsp;&nbsp;&nbsp;&nbsp;650 y.o.
       </p>
     </div>
   </div>
-  <div class="row">
-    <div class="col-lg-10 col-lg-offset-1">
-      <p class="price text-center">
-        650 y.o.
+  <!--<div class="row">-->
+    <!--<div class="col-lg-10 col-lg-offset-1">-->
+      <!--<p class="price text-center">-->
+        <!--650 y.o.-->
 
-      </p>
-    </div>
-  </div>
+      <!--</p>-->
+    <!--</div>-->
+  <!--</div>-->
 
   <div class="row">
     <p class="text-center text_head_effect_block">Фотозйомка</p>
+  </div>
+  <div class="row">
+    <div class="col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3 col-xs-8 col-xs-offset-2 col-sm-10 col-sm-offset-1">
+
+      <ngx-carousel
+        [inputs]="carouselFour"
+        [moveToSlide]="2"
+        (onMove)="myfunc($event)">
+
+        <ngx-item NgxCarouselItem class="bannerStyle">
+          <img src="../../assets/img/video/005.jpg" alt="">
+        </ngx-item>
+        <ngx-item NgxCarouselItem class="bannerStyle">
+          <img src="../../assets/img/video/006.jpg" alt="">
+        </ngx-item>
+        <ngx-item NgxCarouselItem class="bannerStyle">
+          <img src="../../assets/img/video/007.jpg" alt="">
+        </ngx-item>
+
+        <button NgxCarouselPrev class='leftRs'>&lt;</button>
+        <button NgxCarouselNext class='rightRs'>&gt;</button>
+      </ngx-carousel>
+    </div>
   </div>
   <div class="row">
     <div class="col-lg-10 col-lg-offset-1">
@@ -52,23 +76,50 @@
         *День зйомки до другого столу (до 22.00).<br>
         *Флешка з усіма фото (оброблені художньою фото (250-300 фото).<br>
         *Фотокнига в шкірзамінику розміром 30*30 см на 50 сторінок,<br>
-        + Подарунковий бокс для зберігання альбому і флешки
+        + Подарунковий бокс для зберігання альбому і флешки.
+        &nbsp;&nbsp;&nbsp;&nbsp; 500 у.о.
 
       </p>
     </div>
   </div>
-  <div class="row">
-    <div class="col-lg-10 col-lg-offset-1">
-      <p class="price text-center">
-        500 y.o.
+  <!--<div class="row">-->
+    <!--<div class="col-lg-10 col-lg-offset-1">-->
+      <!--<p class="price text-center">-->
+        <!--500 y.o.-->
 
-      </p>
-    </div>
-  </div>
+      <!--</p>-->
+    <!--</div>-->
+  <!--</div>-->
 
   <div class="row">
     <p class="text-center text_head_effect_block">Фотозйомка+роздрук вдень весілля
     </p>
+  </div>
+  <div class="row">
+    <div class="col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3 col-xs-8 col-xs-offset-2 col-sm-10 col-sm-offset-1">
+
+      <ngx-carousel
+        [inputs]="carouselFourr"
+        [moveToSlide]="2"
+        (onMove)="myfunc($event)">
+
+        <ngx-item NgxCarouselItem class="bannerStyle">
+          <img src="../../assets/img/video/1.jpg" alt="">
+        </ngx-item>
+        <ngx-item NgxCarouselItem class="bannerStyle">
+          <img src="../../assets/img/video/2.jpg" alt="">
+        </ngx-item>
+        <ngx-item NgxCarouselItem class="bannerStyle">
+          <img src="../../assets/img/video/3.jpg" alt="">
+        </ngx-item>
+        <ngx-item NgxCarouselItem class="bannerStyle">
+          <img src="../../assets/img/video/4.jpg" alt="">
+        </ngx-item>
+
+        <button NgxCarouselPrev class='leftRs'>&lt;</button>
+        <button NgxCarouselNext class='rightRs'>&gt;</button>
+      </ngx-carousel>
+    </div>
   </div>
   <div class="row">
     <div class="col-lg-10 col-lg-offset-1">
@@ -87,6 +138,7 @@
     <p class="text-center text_head_effect_block">Фотозйомка
     </p>
   </div>
+
   <div class="row">
     <div class="col-lg-10 col-lg-offset-1">
       <p class="text_text_effect_block">
