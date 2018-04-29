@@ -22,6 +22,7 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { environment } from '../environments/environment';
 import { CreateComponent } from './create/create.component';
+import {LocationStrategy, HashLocationStrategy} from '@angular/common';
 import { ImageCropperModule } from 'ngx-image-cropper';
 import {MatFormFieldModule} from '@angular/material/form-field';
 @NgModule({
@@ -50,6 +51,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     NgxCarouselModule,
     MatMenuModule,
     RouterModule.forRoot(appRoutes),
+    {provide: LocationStrategy, useClass: HashLocationStrategy}
     BrowserAnimationsModule,
     ImageCropperModule
   ],
