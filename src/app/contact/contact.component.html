@@ -1,3 +1,28 @@
-<p>
-  contact works!
-</p>
+<div class="container">
+  <div class="row">
+    <p class="text-center effect_head">Напишіть нам листа</p>
+  </div>
+  <div class="col-lg-12">
+    <div class="row">
+      <div class="col-lg-10 col-lg-offset-1">
+        <form [formGroup]="rForm"   id="contact_form">
+          <mat-form-field>
+            <input matInput type="email" placeholder="Ваш емейл" class = "form-control" formControlName="email" >
+          </mat-form-field>
+
+          <mat-form-field>
+            <input matInput type="text" placeholder="Ваше імя" class = "form-control" formControlName="name">
+          </mat-form-field>
+          <mat-form-field>
+            <input matInput type="text" placeholder="Повідомлення" class = "form-control" formControlName="text" >
+          </mat-form-field>
+
+
+          <p class="text-center">
+            <button class="btn form-control"  (click) = "navigateToStepOne();">Надіслати</button>
+          </p>
+        </form>
+    </div>
+  </div>
+</div>
+
