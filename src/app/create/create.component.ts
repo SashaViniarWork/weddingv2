@@ -29,7 +29,8 @@ export class CreateComponent implements OnInit {
       description: ['', Validators.required],
       file: ['', Validators.required],
       qqq: ['', Validators.required],
-      rent: ['', Validators.required]
+      rent: ['', Validators.required],
+      color: ['', Validators.required]
     });
   }
 
@@ -40,11 +41,12 @@ export class CreateComponent implements OnInit {
       file1: this.croppedImagetwo,
       file2: this.croppedImagethird,
       zastava: this.angForm.value.qqq,
-      rent: this.angForm.value.rent
+      rent: this.angForm.value.rent,
+      color: this.angForm.value.color
     };
     const obj = this.db.database.ref(this.basePath);
     obj.push(dataObj);
-    console.log('Success');
+    alert("Плаття додано");
   }
 
   fileChangeEvent(event: any): void {

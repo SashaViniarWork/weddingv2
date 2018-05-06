@@ -13,4 +13,7 @@ export class AppComponent {
   Nav(a) {
     this.router.navigate(['/' + a + '']);
   }
+  ToUp() {
+    window.scrollTo(0, 0);
+  }
 }
